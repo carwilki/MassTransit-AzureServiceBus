@@ -53,7 +53,7 @@ nunit :test => [:ensure_account_details, :release, :compile] do |n|
   conf_assert
   asms = Dir.glob("#{File.dirname(__FILE__)}/src/MassTransit.*.Tests/bin/#{CONFIGURATION}/*.Tests.dll")
   puts "Running nunit with assemblies: #{asms.inspect}"
-  n.command = Dir.glob("#{File.dirname(__FILE__)}/src/packages/NUnit*/Tools/nunit-console.exe").first
+  n.command = Dir.glob("#{File.dirname(__FILE__)}/src/packages/NUnit.Runners*/Tools/nunit-console.exe").first
   n.assemblies = asms
   n.options '/framework=net-4.0'
 end
@@ -90,7 +90,7 @@ nuspec :nuspec => ['build/nuspec', :nuspec_copy] do |nuspec|
   nuspec.licenseUrl = "http://www.apache.org/licenses/LICENSE-2.0"
   nuspec.requireLicenseAcceptance = "true"
   nuspec.dependency "MassTransit", "2.1.1"
-  nuspec.dependency "WindowsAzure.ServiceBus", "1.6.0"
+  nuspec.dependency "WindowsAzure.ServiceBus", "1.7.0"
   nuspec.output_file = 'build/nuspec/MassTransit.AzureServiceBus.nuspec'
 end
 
