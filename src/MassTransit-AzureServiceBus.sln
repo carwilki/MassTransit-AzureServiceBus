@@ -1,18 +1,23 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{B57B3247-3B1B-42F1-8C3B-203CA42BB110}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\packages.config = .nuget\packages.config
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{5E58A17C-99DE-46F2-A42D-353F97F5C277}"
 	ProjectSection(SolutionItems) = preProject
 		..\README.md = ..\README.md
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PerfTests", "PerfTests", "{37BEC7A7-AC37-406A-9DE9-C62DA948C5E4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "utils", "utils", "{AD2AFA6C-BB44-4170-BBD5-3CE832173B3E}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MassTransit.Transports.AzureServiceBus", "MassTransit.Transports.AzureServiceBus\MassTransit.Transports.AzureServiceBus.csproj", "{0E9F5DB7-3FA0-444F-BF82-74947525AE62}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MassTransit.Transports.AzureServiceBus.Tests", "MassTransit.Transports.AzureServiceBus.Tests\MassTransit.Transports.AzureServiceBus.Tests.csproj", "{BF352953-D63A-41A1-B3CF-65BE5624DA80}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PerfTests", "PerfTests", "{37BEC7A7-AC37-406A-9DE9-C62DA948C5E4}"
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "MassTransit.Transports.AzureServiceBus.Receiver", "MassTransit.Transports.AzureServiceBus.Receiver\MassTransit.Transports.AzureServiceBus.Receiver.fsproj", "{47AC8FB8-C8F9-47E8-A303-7D673E2E24DE}"
 EndProject
@@ -27,8 +32,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MassTransit.AzurePerformance.Messages", "PerformanceTesting\MassTransit.AzurePerformance.Messages\MassTransit.AzurePerformance.Messages.csproj", "{698E3DE2-501C-4609-A67B-CE98BA7CF1EC}"
 EndProject
 Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "MassTransit.AzurePerformance", "PerformanceTesting\MassTransit.AzurePerformance\MassTransit.AzurePerformance.ccproj", "{04363CBC-D947-4173-8079-40AF92C0D3F3}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "utils", "utils", "{AD2AFA6C-BB44-4170-BBD5-3CE832173B3E}"
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "MassTransit.Async", "MassTransit.Async\MassTransit.Async.fsproj", "{FAB00836-A867-474E-9D9B-B240ADD41696}"
 EndProject

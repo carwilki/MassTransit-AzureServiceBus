@@ -104,8 +104,8 @@
     <Compile Include="Azure_management_impl_spec.cs" />
     <Compile Include="BugTrack\FromMailingList.cs" />
     <Compile Include="Credentials_impl_spec.cs" />
-    <Compile Include="Pre_shared_key_credentials_transformations_spec.cs" />
     <Compile Include="Framework\AccountDetails.cs" />
+    <Compile Include="Pre_shared_key_credentials_transformations_spec.cs" />
     <Compile Include="Framework\TestDataFactory.cs" />
     <Compile Include="Inbound_transport_bound_management_spec.cs" />
     <Compile Include="Scratch.cs" />
